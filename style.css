@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+*,
+*:after,
+*:before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Kufi Arabic', sans-serif;
+  font-size: 16px;
+}
+
+.box {
+  width: 90%;
+  position: relative;
+  margin: 50px auto;
+  box-shadow: 0 5px 30px 5px #D0D0D0;
+  display: grid;
+  place-items: center
+}
+
+.box-four {
+  padding: 30px 10px;
+}
+
+
+.wallpaper {
+  /* border: 1px solid #0061FF; */
+  padding: 80px 20px 40px;
+  width: 300px;
+  background-color: #CCB67D/*#E0D3AF*/;
+  font-family: 'Cedarville Cursive', cursive;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1;
+  text-align: center;
+  position: relative;
+  border-radius: 5px 0 5px 5px;
+}
+.wallpaper .sign {
+  width: 80px;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.wallpaper::after {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  top: -1px;
+  right: -1px;
+  background-image: repeating-linear-gradient(
+  45deg,
+  #715E2E, 
+  #A48F57 20%, 
+  #DFC98F 40%,
+  #715E2E 50%,
+  #fff 50%,
+  #fff 100%
+  );
+  border-radius: 5px;
+  box-shadow: -4px 5px 3px 0 #8D87784F
+  
+}
+.pen {
+  width: 160px;
+  height: 200px;
+  position: absolute;
+  left: -30%;
+  bottom: 0;
+  transform: rotate(-30deg)
+}
